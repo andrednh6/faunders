@@ -466,7 +466,6 @@ function next(){
     let uniqueFirstSolution = [...new Set(FirstSolutions)]
     sessionStorage.setItem("firstFilterOption", JSON.stringify(firstFilterOption));
     sessionStorage.setItem("uniqueFirstSolutions", JSON.stringify(uniqueFirstSolution));
-    debugger
   } else if (question_count == 1){
     let secondOption = document.querySelector("li.option.active").innerHTML;
     sessionStorage.setItem("secondOption", secondOption);
