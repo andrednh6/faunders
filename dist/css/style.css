@@ -45,7 +45,7 @@ body {
   color: #341f97;
   border: none;
   border-radius: 100px;
-  transition: 0.4s all;
+  transition: 0.01s all;
 }
 
 .welcome_form button:hover {
@@ -113,7 +113,7 @@ body {
   padding: 15px 35px;
   border: none;
   border-radius: 27px;
-  transition: 0.4s all;
+  transition: 0.01s all;
 }
 
 .btn-next:hover {
@@ -125,6 +125,10 @@ body {
 
 .active {
   background-color: #341f97;
+  color: #fff;
+}
+
+.option.active:hover{
   color: #fff;
 }
 

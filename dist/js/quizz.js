@@ -12,17 +12,17 @@ window.onload = function() {
 const models = [
   {
   id: "cod01",
-  create:"Producto",
+  create:"Producto físico",
   forWho:"Personas",
   previousEvent:"Sí",
   velocity:"Pronto",
   solvedBy:"Mi empresa",
   credibility:"No necesita",
-  similarTo: "Arquipets y Noia"
+  similarTo: "Arquipets"
   },
   {
   id: "cod02",
-  create:"Producto",
+  create:"Producto físico",
   forWho:"Personas",
   previousEvent:"Sí",
   velocity:"Pronto",
@@ -32,47 +32,37 @@ const models = [
   },
   {
   id: "cod03",
-  create:"Producto",
+  create:"Producto físico",
   forWho:"Personas",
   previousEvent:"No",
   velocity:"Pronto",
   solvedBy:"Mi empresa",
   credibility:"No necesita",
-  similarTo: "Ekolo y La Clotilde"
+  similarTo: "Ekolo"
   },
   {
   id: "cod04",
-  create:"Producto",
+  create:"Producto físico",
   forWho:"Personas",
   previousEvent:"No",
   velocity:"Pronto",
   solvedBy:"Mi empresa",
   credibility:"Se necesita expertos en el tema",
-  similarTo: "Unbranded y Mamalama"
+  similarTo: "Mamalama"
   },
   {
   id: "cod05",
-  create:"Producto",
+  create:"Producto físico",
   forWho:"Personas",
   previousEvent:"No",
   velocity:"Pronto",
   solvedBy:"Terceros (conexión)",
   credibility:"No necesita",
-  similarTo: "Conectagro, Perpetua y Alquilab"
+  similarTo: "Conectagro"
   },
   {
   id: "cod06",
-  create:"Producto",
-  forWho:"Empresas pequeñas o medianas",
-  previousEvent:"Sí",
-  velocity:"Pronto",
-  solvedBy:"Mi empresa",
-  credibility:"Se necesita expertos en el tema",
-  similarTo: "Bioflash"
-  },
-  {
-  id: "cod07",
-  create:"Producto",
+  create:"Producto físico",
   forWho:"Personas y Ayuda Social",
   previousEvent:"No",
   velocity:"Pronto",
@@ -81,15 +71,285 @@ const models = [
   similarTo: "Outfie"
   },
   {
-  id: "cod08",
-  create:"Producto",
+  id: "cod07",
+  create:"Producto físico",
   forWho:"Personas y Ayuda Social",
   previousEvent:"No",
   velocity:"Pronto",
   solvedBy:"Mi empresa",
   credibility:"No necesita",
-  similarTo: "Entre Árboles"
-  }
+  similarTo: "Antarki"
+  },
+  {
+  id: "cod08",
+  create:"Producto físico",
+  forWho:"Empresas pequeñas o medianas",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Mi empresa",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Bioflash"
+  },
+  {
+  id: "cod09",
+  create:"Producto + servicio",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Somos Moto"
+  },
+  {
+  id: "cod10",
+  create:"Producto + servicio",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Pronto",
+  solvedBy:"Mi empresa + terceros",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Outfie"
+  },
+  {
+  id: "cod11",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Inmediato",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita confianza",
+  similarTo: "Yegoh"
+  },
+  {
+  id: "cod12",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Mi empresa",
+  credibility:"Se necesita confianza",
+  similarTo: "Sin envolturas"
+  },
+  {
+  id: "cod13",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Mi empresa",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Legaly"
+  },
+  {
+  id: "cod14",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Eventualmente",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Queestudiar"
+  },
+  {
+  id: "cod15",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Inmediato",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita confianza",
+  similarTo: "WePayU"
+  },
+  {
+  id: "cod16",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Inmediato",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Fastfix"
+  },
+  {
+  id: "cod17",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Pronto",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita confianza",
+  similarTo: "Rebajatuscuentas"
+  },
+  {
+  id: "cod18",
+  create:"Servicio por única vez",
+  forWho:"Empresas pequeñas o medianas",
+  previousEvent:"No",
+  velocity:"Pronto",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "Mitienda"
+  },
+  {
+  id: "cod19",
+  create:"Servicio por única vez",
+  forWho:"Empresas grandes",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita confianza",
+  similarTo: "LinkMiners"
+  }, 
+  {
+  id: "cod20",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Hospitapp"
+  }, 
+  {
+  id: "cod21",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Likemytravel"
+  }, 
+  {
+  id: "cod22",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "Bombo"
+  }, 
+  {
+  id: "cod23",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Inmediato",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Monkeyfit"  
+  }, 
+  {
+  id: "cod24",
+  create:"Servicio constante",
+  forWho:"Empesas pequeñas o medianas",
+  previousEvent:"No",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "Tukuy"  
+  }, 
+  {
+  id: "cod25",
+  create:"Servicio constante",
+  forWho:"Empesas pequeñas o medianas",
+  previousEvent:"No",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Qualus"  
+  }, 
+  {
+  id: "cod26",
+  create:"Servicio constante",
+  forWho:"Empesas pequeñas o medianas + sus clientes",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "Tannder"  
+  }, 
+  {
+  id: "cod27",
+  create:"Servicio constante",
+  forWho:"Empesas grandes",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Tukutin"  
+  }, 
+  {
+  id: "cod28",
+  create:"Servicio constante",
+  forWho:"Empesas grandes",
+  previousEvent:"No",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "Mandü"  
+  }, 
+  {
+  id: "cod29",
+  create:"Servicio constante",
+  forWho:"Empesas grandes + sus clientes",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "Check"  
+  }, 
+  {
+  id: "cod30",
+  create:"Servicio constante",
+  forWho:"Empesas grandes + sus clientes",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa + terceros",
+  credibility:"No necesita",
+  similarTo: "Wibo"  
+  }, 
+  {
+  id: "cod31",
+  create:"Servicio constante",
+  forWho:"Empesas grandes + trabajadores",
+  previousEvent:"No",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "AYO Mentoring"  
+  }, 
+  {
+  id: "cod32",
+  create:"Aprendizaje",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Arcux"  
+  }, 
+  {
+  id: "cod33",
+  create:"Empleo",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Eventualmente",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Talently"  
+  }, 
+  {
+  id: "cod34",
+  create:"Empleo",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Eventualmente",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "WomanOnWork"  
+  }                
 ]
 
 
@@ -98,9 +358,16 @@ const models = [
 //reduzco la matriz de resultados del filtro a una con solo las respuestas correctas en forWho, previousEvent, velocity, solvedBy, credibility, similarTo
 
 
+//To do agregar los filtros que se van a usar en el futuro
+
+
+
+let filds = ["id","create","forWho","previousEvent","velocity","solvedBy","credibility","similarTo"]
+
+
 //En caso 
 //Casos de Producto
-let createProd = models.filter(x => x.create == "Producto")
+let createProd = models.filter(x => x.create == "Producto físico")
 let onlyProd = createProd.map(x => x.create)
 let forWhoProd = createProd.map(x => x.forWho)
 let previousProd = createProd.map(x => x.previousEvent)
@@ -178,27 +445,43 @@ function submitForm(e) {
 }
 
 let question_count = 0;
-
 let user_answers = [];
+
 //localStorage.removeItem("answers")
 function next(){
   if(question_count == questions.length - 1){
-    
     let user_answer = document.querySelector("li.option.active").innerHTML;
     user_answers.push(user_answer); 
-    sessionStorage.setItem("answers", JSON.stringify(user_answers));
-
+    sessionStorage.setItem("answers", JSON.stringify(user_answers));  
     location.href = "end.html";
     return;
   }
   let user_answer = document.querySelector("li.option.active").innerHTML;
   user_answers.push(user_answer); 
   sessionStorage.setItem("answers", JSON.stringify(user_answers));
- 
-  //check answer by the user
-  question_count++;
-  show(question_count);
-}
+  if (question_count == 0) {
+    //MODIFICAR AL CAMBIAR EL ORDEN DE PREGUNTAS x.create por x.forWho
+    let firstFilterOption = models.filter(x => x.create == user_answer);
+    let FirstSolutions = firstFilterOption.map(x =>x.forWho)
+    let uniqueFirstSolution = [...new Set(FirstSolutions)]
+    sessionStorage.setItem("firstFilterOption", JSON.stringify(firstFilterOption));
+    sessionStorage.setItem("uniqueFirstSolutions", JSON.stringify(uniqueFirstSolution));
+    debugger
+  } else if (question_count == 1){
+    let secondOption = document.querySelector("li.option.active").innerHTML;
+    sessionStorage.setItem("secondOption", secondOption);
+    let secondFilterOption = firstFilterOption.filter(x => x.forWho === secondOption);
+  //let filds = ["id","create","forWho","previousEvent","velocity","solvedBy","credibility","similarTo"]
+  }
+  //if (question_count == 1) {
+    //  onlyAvailableOptions();
+    //}
+    console.log()
+    //check answer by the user
+    question_count++;
+    show(question_count);
+    //give only availableOptions for next questions
+  }
 
 //question_count = Nro de pregunta
 //options_counter = Nro de opciones de la pregunta
@@ -236,3 +519,6 @@ function toggleActive(){
     }
 }
 
+//function onlyAvailableOptions(){  
+  //let availableOptions = models.filter(x => x.forWho === firstFilterOption)
+//}

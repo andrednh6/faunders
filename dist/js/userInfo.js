@@ -11,22 +11,22 @@ document.querySelector(".u_name").innerHTML = u_name;
 
 //aqui agregamos las respuestas que posteriormente seran comparadas
 
-let cod0 = ["Producto", "Personas","Sí","Pronto","Mi empresa","No necesita"
+let cod0 = ["Producto físico", "Personas","Sí","Pronto","Mi empresa","No necesita"
 ,"Arquipets y Noia"]
 
-let cod1 = ["Producto","Personas","Sí","Pronto","Terceros (conexión)","No necesita","Desmadres"]
+let cod1 = ["Producto físico","Personas","Sí","Pronto","Terceros (conexión)","No necesita","Desmadres"]
 
-let cod2 = ["Producto","Personas","No","Pronto","Mi empresa","No necesita","Ekolo y La Clotilde"]
+let cod2 = ["Producto físico","Personas","No","Pronto","Mi empresa","No necesita","Ekolo y La Clotilde"]
 
-let cod3 = ["Producto","Personas","No","Pronto","Mi empresa","Se necesita expertos en el tema","Unbranded y Mamalama"]
+let cod3 = ["Producto físico","Personas","No","Pronto","Mi empresa","Se necesita expertos en el tema","Unbranded y Mamalama"]
 
-let cod4 = ["Producto","Personas","No","Pronto","Terceros (conexión)","No necesita","Conectagro, Perpetua y Alquilab"]
+let cod4 = ["Producto físico","Personas","No","Pronto","Terceros (conexión)","No necesita","Conectagro, Perpetua y Alquilab"]
 
-let cod5 = ["Producto","Empresas pequeñas o medianas","Sí","Pronto","Mi empresa","Se necesita expertos en el tema","Bioflash"]   
+let cod5 = ["Producto físico","Empresas pequeñas o medianas","Sí","Pronto","Mi empresa","Se necesita expertos en el tema","Bioflash"]   
 
-let cod6 = ["Producto","Personas y Ayuda Social","No","Pronto","Mi empresa","Se necesita expertos en el tema","Outfie"]
+let cod6 = ["Producto físico","Personas y Ayuda Social","No","Pronto","Mi empresa","Se necesita expertos en el tema","Outfie"]
 
-let cod7 = ["Producto","Personas y Ayuda Social","No","Pronto","Mi empresa","No necesita","Entre Árboles"]
+let cod7 = ["Producto físico","Personas y Ayuda Social","No","Pronto","Mi empresa","No necesita","Entre Árboles"]
 
 
 let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7]
