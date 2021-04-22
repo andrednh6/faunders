@@ -469,7 +469,8 @@ function next(){
   } else if (question_count == 1){
     let secondOption = document.querySelector("li.option.active").innerHTML;
     sessionStorage.setItem("secondOption", secondOption);
-    let secondFilterOption = firstFilterOption.filter(x => x.forWho === secondOption);
+    //corregir
+  //  let secondFilterOption = firstFilterOption.filter(x => x.forWho === secondOption);
   //let filds = ["id","create","forWho","previousEvent","velocity","solvedBy","credibility","similarTo"]
   }
   //if (question_count == 1) {
