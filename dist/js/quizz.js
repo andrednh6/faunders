@@ -398,32 +398,34 @@ let questions = [
     {
       id:1,
       question:"¿Qué quieres ofrecer?",
-      options: uniqueOnlyProd
+      options: [ "Producto físico", "Producto + servicio", "Servicio por única vez", "Servicio constante", "Aprendizaje", "Empleo"
+       // "Personas", "Personas y Ayuda Social", "Empresas pequeñas o medianas", "Empesas pequeñas o medianas + sus clientes", "Empresas grandes", "Empesas grandes + sus clientes", "Empesas grandes + trabajadores"
+      ]
     },
     {
       id:2,
       question:"¿Quién se beneficia principalmente?",
-      options: uniqueWhoProd
+      options: []
     },
     {
       id:3,
       question:"¿Este usuario tiene esa necesidad luego de eventos del pasado?",
-      options: uniquePreviousProd
+      options: []
     },
     {
       id:4,
       question:"¿Cuál es la mínima rapidez que espera el usuario?",
-      options: uniqueVelocityProd
+      options: []
     },
     {
       id:5,
       question:"¿Quién ofrece la solución final?",
-      options: uniqueSolvedProd
+      options: []
     },
     {
       id:6,
       question:"¿Cuánta credibilidad necesita tu emprendimiento para funcionar?",
-      options: uniqueCredibilityProd 
+      options: []
     }
 ];
 
@@ -449,6 +451,7 @@ let user_answers = [];
 
 //localStorage.removeItem("answers")
 function next(){
+  debugger
   if(question_count == questions.length - 1){
     let user_answer = document.querySelector("li.option.active").innerHTML;
     user_answers.push(user_answer); 
@@ -462,24 +465,35 @@ function next(){
   if (question_count == 0) {
     //MODIFICAR AL CAMBIAR EL ORDEN DE PREGUNTAS x.create por x.forWho
     let firstFilterOption = models.filter(x => x.create == user_answer);
-    let FirstSolutions = firstFilterOption.map(x =>x.forWho)
-    let uniqueFirstSolution = [...new Set(FirstSolutions)]
-    sessionStorage.setItem("firstFilterOption", JSON.stringify(firstFilterOption));
-    sessionStorage.setItem("uniqueFirstSolutions", JSON.stringify(uniqueFirstSolution));
-  } else if (question_count == 1){
-    let secondOption = document.querySelector("li.option.active").innerHTML;
-    sessionStorage.setItem("secondOption", secondOption);
-    //corregir
+    let FirstSolutions = firstFilterOption.map(x =>x.forWho);
+    let uniqueFirstSolution = [...new Set(FirstSolutions)];
+      sessionStorage.setItem("firstFilter", JSON.stringify(firstFilterOption));
+      sessionStorage.setItem("uniqueFirstSolutions", JSON.stringify(uniqueFirstSolution));
+    //SE MODIFICARA EL NRO AL CAMBIAR EL ORDEN DE LAS PREGUNTAS
+      bringBack("uniqueFirstSolutions",1);
+      
+      question_count++;
+      show(question_count);
+    } else if (question_count >= 1){
+      let secondOption = document.querySelector("li.option.active").innerHTML;
+      sessionStorage.setItem("secondOption", secondOption);
+      solvingMatrix(); 
+      bringBack("uniqueSecondSolutions",2);
+      bringBack("uniqueThirdSolutions",3);
+      bringBack("uniqueFourthSolutions",4);
+      bringBack("uniqueFifthSolutions",5);
+      
+    //AL MODIFICAR EL ORDEN DE LAS PREGUNTAS cambiar x.forWho por x.create
+    question_count++;
+    show(question_count);
   //  let secondFilterOption = firstFilterOption.filter(x => x.forWho === secondOption);
   //let filds = ["id","create","forWho","previousEvent","velocity","solvedBy","credibility","similarTo"]
   }
   //if (question_count == 1) {
     //  onlyAvailableOptions();
     //}
-    console.log()
     //check answer by the user
-    question_count++;
-    show(question_count);
+
     //give only availableOptions for next questions
   }
 
@@ -488,25 +502,38 @@ function next(){
 
 
   function show(count){
+    debugger
     let question = document.getElementById("questions");
     let options_counter = questions[question_count]["options"].length;
-    question.innerHTML = `
-    <h2>${questions[count].question}</h2>`;
-  
-    for (let j = 0; j < options_counter; j++) {
-    // question.innerHTML = "<h2>" + questions[count].question + "</h2>";
-    question.innerHTML += ` 
-     <ul class="option_group">
-     <li class="option">${questions[count].options[j]}</li>
-     </ul>
-     `;
-     }
-     toggleActive();
+    if (count >= 1){
+      let options_counter = questions[question_count]["options"][0].length;
+      question.innerHTML = `
+      <h2>${questions[count].question}</h2>`;
+      for (let j = 0; j < options_counter; j++) {
+        question.innerHTML += ` 
+         <ul class="option_group">
+         <li class="option">${questions[count].options[0][j]}</li>
+         </ul>
+         `;
+         }
+         toggleActive();
+    } else {
+      question.innerHTML = `
+      <h2>${questions[count].question}</h2>`;
+      for (let j = 0; j < options_counter; j++) {
+      // question.innerHTML = "<h2>" + questions[count].question + "</h2>";
+      question.innerHTML += ` 
+       <ul class="option_group">
+       <li class="option">${questions[count].options[j]}</li>
+       </ul>
+       `;
+       }
+       toggleActive();
+    }
 }
 
 function toggleActive(){
   let option = document.querySelectorAll("li.option");
-
   for (let i = 0; i< option.length; i++){
       option[i].onclick = function(){
         for(let k=0; k < option.length; k++){
@@ -522,3 +549,33 @@ function toggleActive(){
 //function onlyAvailableOptions(){  
   //let availableOptions = models.filter(x => x.forWho === firstFilterOption)
 //}
+
+
+solvingMatrix = function() {
+  let one = sessionStorage.getItem("firstFilter");
+  let oneFilter = JSON.parse(one);
+  let second = sessionStorage.getItem("secondOption");
+  let secondFilterOption = oneFilter.filter(x => x.forWho === second);
+  let secondSolutions = secondFilterOption.map(x => x.previousEvent);
+  let thirdSolutions = secondFilterOption.map(x => x.velocity);
+  let fourthSolutions = secondFilterOption.map(x =>x.solvedBy);
+  let fifthSolutions = secondFilterOption.map(x => x.credibility);
+  
+  let uniqueSecondSolutions =[...new Set(secondSolutions)];
+  let uniqueThirdSolutions =[...new Set(thirdSolutions)];
+  let uniqueFourthSolutions =[...new Set(fourthSolutions)];
+  let uniqueFifthSolutions =[...new Set(fifthSolutions)];
+
+  sessionStorage.setItem("uniqueSecondSolutions", JSON.stringify(uniqueSecondSolutions));
+  sessionStorage.setItem("uniqueThirdSolutions", JSON.stringify(uniqueThirdSolutions));
+  sessionStorage.setItem("uniqueFourthSolutions", JSON.stringify(uniqueFourthSolutions));
+  sessionStorage.setItem("uniqueFifthSolutions", JSON.stringify(uniqueFifthSolutions));
+}
+
+
+function bringBack (keyName, number){
+
+  z = sessionStorage.getItem(keyName);
+  zBack = JSON.parse(z);
+  questions[number]["options"].push(zBack)
+}
