@@ -61,9 +61,19 @@ const models = [
   similarTo: "Conectagro"
   },
   {
+  id: "cod09",
+  create:"Producto + servicio",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Somos Moto"
+  },
+  {
   id: "cod06",
-  create:"Producto físico",
-  forWho:"Personas y Ayuda Social",
+  create:"Producto + servicio",
+  forWho:"Personas",
   previousEvent:"No",
   velocity:"Pronto",
   solvedBy:"Mi empresa",
@@ -91,16 +101,6 @@ const models = [
   similarTo: "Bioflash"
   },
   {
-  id: "cod09",
-  create:"Producto + servicio",
-  forWho:"Personas",
-  previousEvent:"Sí",
-  velocity:"Pronto",
-  solvedBy:"Terceros (conexión)",
-  credibility:"No necesita",
-  similarTo: "Somos Moto"
-  },
-  {
   id: "cod10",
   create:"Producto + servicio",
   forWho:"Personas",
@@ -121,6 +121,26 @@ const models = [
   similarTo: "Yegoh"
   },
   {
+  id:"cod15",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Inmediato",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita confianza",
+  similarTo:"WePayU"
+  },
+  {
+  id: "cod16",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Inmediato",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Fastfix"
+  },
+  {
   id: "cod12",
   create:"Servicio por única vez",
   forWho:"Personas",
@@ -138,37 +158,7 @@ const models = [
   velocity:"Pronto",
   solvedBy:"Mi empresa",
   credibility:"Se necesita expertos en el tema",
-  similarTo: "Legaly"
-  },
-  {
-  id: "cod14",
-  create:"Servicio por única vez",
-  forWho:"Personas",
-  previousEvent:"Sí",
-  velocity:"Eventualmente",
-  solvedBy:"Terceros (conexión)",
-  credibility:"No necesita",
-  similarTo: "Queestudiar"
-  },
-  {
-  id: "cod15",
-  create:"Servicio por única vez",
-  forWho:"Personas",
-  previousEvent:"No",
-  velocity:"Inmediato",
-  solvedBy:"Terceros (conexión)",
-  credibility:"Se necesita confianza",
-  similarTo: "WePayU"
-  },
-  {
-  id: "cod16",
-  create:"Servicio por única vez",
-  forWho:"Personas",
-  previousEvent:"No",
-  velocity:"Inmediato",
-  solvedBy:"Terceros (conexión)",
-  credibility:"Se necesita expertos en el tema",
-  similarTo: "Fastfix"
+  similarTo:"Legaly"
   },
   {
   id: "cod17",
@@ -179,6 +169,16 @@ const models = [
   solvedBy:"Terceros (conexión)",
   credibility:"Se necesita confianza",
   similarTo: "Rebajatuscuentas"
+  },
+  {
+  id: "cod14",
+  create:"Servicio por única vez",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Eventualmente",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Queestudiar"
   },
   {
   id: "cod18",

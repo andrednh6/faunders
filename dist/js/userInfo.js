@@ -12,22 +12,44 @@ document.querySelector(".u_name").innerHTML = u_name;
 //aqui agregamos las respuestas que posteriormente seran comparadas
 
 let cod0 = ["Producto físico", "Personas","Sí","Pronto","Mi empresa","No necesita"
-,"Arquipets y Noia"]
+,"Arquipets"]
 
 let cod1 = ["Producto físico","Personas","Sí","Pronto","Terceros (conexión)","No necesita","Desmadres"]
 
-let cod2 = ["Producto físico","Personas","No","Pronto","Mi empresa","No necesita","Ekolo y La Clotilde"]
+let cod2 = ["Producto físico","Personas","No","Pronto","Mi empresa","No necesita","Ekolo"]
 
-let cod3 = ["Producto físico","Personas","No","Pronto","Mi empresa","Se necesita expertos en el tema","Unbranded y Mamalama"]
+let cod3 = ["Producto físico","Personas","No","Pronto","Mi empresa","Se necesita expertos en el tema","Mamalama"]
 
-let cod4 = ["Producto físico","Personas","No","Pronto","Terceros (conexión)","No necesita","Conectagro, Perpetua y Alquilab"]
+let cod4 = ["Producto físico","Personas","No","Pronto","Terceros (conexión)","No necesita","Conectagro"]
 
 let cod5 = ["Producto físico","Empresas pequeñas o medianas","Sí","Pronto","Mi empresa","Se necesita expertos en el tema","Bioflash"]   
 
-let cod6 = ["Producto físico","Personas y Ayuda Social","No","Pronto","Mi empresa","Se necesita expertos en el tema","Outfie"]
+let cod6 = ["Producto + servicio","Personas","No","Pronto","Mi empresa + terceros","Se necesita expertos en el tema","Outfie"]
 
 let cod7 = ["Producto físico","Personas y Ayuda Social","No","Pronto","Mi empresa","No necesita","Entre Árboles"]
 
+let cod8 = ["Producto + servicio","Personas","Sí","Pronto","Terceros (conexión)","No necesita","Somos Moto"]
+
+let cod9 = ["Servicio por única vez","Personas",
+"Sí","Inmediato","Terceros (conexión)","Se necesita confianza","Yegoh"]
+
+let cod10 = ["Servicio por única vez","Personas","No","Inmediato",
+"Terceros (conexión)","Se necesita confianza","WePayU" 
+]
+let cod11 = ["Servicio por única vez","Personas","No","Inmediato","Terceros (conexión)","Se necesita expertos en el tema","Fastfix"
+]
+
+let cod12 = ["Servicio por única vez","Personas","Sí","Pronto","Mi empresa","Se necesita confianza","Sin envolturas"
+]
+
+let cod13 = ["Servicio por única vez","Personas","Sí","Pronto","Mi empresa","Se necesita expertos en el tema","Legaly"
+]
+
+let cod14 = ["Servicio por única vez","Personas","No","Pronto","Terceros (conexión)","Se necesita confianza","Rebajatuscuentas"
+]
+let cod15 = [
+  
+]
 
 let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7]
 //agregar elementos al array .push()
