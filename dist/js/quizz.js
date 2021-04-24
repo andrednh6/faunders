@@ -451,7 +451,7 @@ let user_answers = [];
 
 //localStorage.removeItem("answers")
 function next(){
-  debugger
+  
   if(question_count == questions.length - 1){
     let user_answer = document.querySelector("li.option.active").innerHTML;
     user_answers.push(user_answer); 
@@ -502,7 +502,7 @@ function next(){
 
 
   function show(count){
-    debugger
+    
     let question = document.getElementById("questions");
     let options_counter = questions[question_count]["options"].length;
     if (count >= 1){
