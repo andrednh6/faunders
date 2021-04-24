@@ -34,24 +34,20 @@ let cod9 = ["Servicio por única vez","Personas",
 "Sí","Inmediato","Terceros (conexión)","Se necesita confianza","Yegoh"]
 
 let cod10 = ["Servicio por única vez","Personas","No","Inmediato",
-"Terceros (conexión)","Se necesita confianza","WePayU" 
-]
-let cod11 = ["Servicio por única vez","Personas","No","Inmediato","Terceros (conexión)","Se necesita expertos en el tema","Fastfix"
-]
+"Terceros (conexión)","Se necesita confianza","WePayU"]
+
+let cod11 = ["Servicio por única vez","Personas","No","Inmediato","Terceros (conexión)","Se necesita expertos en el tema","Fastfix"]
 
 let cod12 = ["Servicio por única vez","Personas","Sí","Pronto","Mi empresa","Se necesita confianza","Sin envolturas"
 ]
 
-let cod13 = ["Servicio por única vez","Personas","Sí","Pronto","Mi empresa","Se necesita expertos en el tema","Legaly"
-]
+let cod13 = ["Servicio por única vez","Personas","Sí","Pronto","Mi empresa","Se necesita expertos en el tema","Legaly"]
 
-let cod14 = ["Servicio por única vez","Personas","No","Pronto","Terceros (conexión)","Se necesita confianza","Rebajatuscuentas"
-]
-let cod15 = [
-  
-]
+let cod14 = ["Servicio por única vez","Personas","No","Pronto","Terceros (conexión)","Se necesita confianza","Rebajatuscuentas"]
 
-let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7]
+let cod15 = ["Servicio por única vez","Personas","Sí","Eventualmente","Terceros (conexión)","No necesita","Queestudiar"]
+
+let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10,cod11,cod12,cod13,cod14,cod15]
 //agregar elementos al array .push()
 //let nuevo = antiguo.push("Holi")
 

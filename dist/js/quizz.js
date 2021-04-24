@@ -81,37 +81,17 @@ const models = [
   similarTo: "Outfie"
   },
   {
-  id: "cod07",
-  create:"Producto físico",
-  forWho:"Personas y Ayuda Social",
-  previousEvent:"No",
-  velocity:"Pronto",
-  solvedBy:"Mi empresa",
-  credibility:"No necesita",
-  similarTo: "Antarki"
-  },
-  {
-  id: "cod08",
-  create:"Producto físico",
-  forWho:"Empresas pequeñas o medianas",
-  previousEvent:"Sí",
-  velocity:"Pronto",
-  solvedBy:"Mi empresa",
-  credibility:"Se necesita expertos en el tema",
-  similarTo: "Bioflash"
-  },
-  {
-  id: "cod10",
-  create:"Producto + servicio",
-  forWho:"Personas",
-  previousEvent:"No",
-  velocity:"Pronto",
-  solvedBy:"Mi empresa + terceros",
+    id: "cod10",
+    create:"Producto + servicio",
+    forWho:"Personas",
+    previousEvent:"No",
+    velocity:"Pronto",
+    solvedBy:"Mi empresa + terceros",
   credibility:"Se necesita expertos en el tema",
   similarTo: "Outfie"
-  },
+},
   {
-  id: "cod11",
+    id: "cod11",
   create:"Servicio por única vez",
   forWho:"Personas",
   previousEvent:"Sí",
@@ -119,19 +99,19 @@ const models = [
   solvedBy:"Terceros (conexión)",
   credibility:"Se necesita confianza",
   similarTo: "Yegoh"
+},
+  {
+    id:"cod15",
+    create:"Servicio por única vez",
+    forWho:"Personas",
+    previousEvent:"No",
+    velocity:"Inmediato",
+    solvedBy:"Terceros (conexión)",
+    credibility:"Se necesita confianza",
+    similarTo:"WePayU"
   },
   {
-  id:"cod15",
-  create:"Servicio por única vez",
-  forWho:"Personas",
-  previousEvent:"No",
-  velocity:"Inmediato",
-  solvedBy:"Terceros (conexión)",
-  credibility:"Se necesita confianza",
-  similarTo:"WePayU"
-  },
-  {
-  id: "cod16",
+    id: "cod16",
   create:"Servicio por única vez",
   forWho:"Personas",
   previousEvent:"No",
@@ -139,8 +119,8 @@ const models = [
   solvedBy:"Terceros (conexión)",
   credibility:"Se necesita expertos en el tema",
   similarTo: "Fastfix"
-  },
-  {
+},
+{
   id: "cod12",
   create:"Servicio por única vez",
   forWho:"Personas",
@@ -149,9 +129,9 @@ const models = [
   solvedBy:"Mi empresa",
   credibility:"Se necesita confianza",
   similarTo: "Sin envolturas"
-  },
+},
   {
-  id: "cod13",
+    id: "cod13",
   create:"Servicio por única vez",
   forWho:"Personas",
   previousEvent:"Sí",
@@ -159,8 +139,8 @@ const models = [
   solvedBy:"Mi empresa",
   credibility:"Se necesita expertos en el tema",
   similarTo:"Legaly"
-  },
-  {
+},
+{
   id: "cod17",
   create:"Servicio por única vez",
   forWho:"Personas",
@@ -169,9 +149,9 @@ const models = [
   solvedBy:"Terceros (conexión)",
   credibility:"Se necesita confianza",
   similarTo: "Rebajatuscuentas"
-  },
+},
   {
-  id: "cod14",
+    id: "cod14",
   create:"Servicio por única vez",
   forWho:"Personas",
   previousEvent:"Sí",
@@ -179,7 +159,97 @@ const models = [
   solvedBy:"Terceros (conexión)",
   credibility:"No necesita",
   similarTo: "Queestudiar"
-  },
+},
+{
+  id: "cod20",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Hospitapp"
+}, 
+{
+  id: "cod22",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Tiempo real",
+  solvedBy:"Mi empresa",
+  credibility:"No necesita",
+  similarTo: "Bombo"
+}, 
+{
+  id: "cod23",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Inmediato",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Monkeyfit"  
+}, 
+{
+  id: "cod21",
+  create:"Servicio constante",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Pronto",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Likemytravel"
+}, 
+{
+  id: "cod32",
+  create:"Aprendizaje",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Tiempo real",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "Arcux"  
+}, 
+{
+  id: "cod33",
+  create:"Empleo",
+  forWho:"Personas",
+  previousEvent:"Sí",
+  velocity:"Eventualmente",
+  solvedBy:"Terceros (conexión)",
+  credibility:"Se necesita expertos en el tema",
+  similarTo: "Talently"  
+}, 
+{
+  id: "cod34",
+  create:"Empleo",
+  forWho:"Personas",
+  previousEvent:"No",
+  velocity:"Eventualmente",
+  solvedBy:"Terceros (conexión)",
+  credibility:"No necesita",
+  similarTo: "WomanOnWork"  
+},                
+{
+id: "cod07",
+create:"Producto físico",
+forWho:"Personas y Ayuda Social",
+previousEvent:"No",
+velocity:"Pronto",
+solvedBy:"Mi empresa",
+credibility:"No necesita",
+similarTo: "Antarki"
+},
+{
+id: "cod08",
+create:"Producto físico",
+forWho:"Empresas pequeñas o medianas",
+previousEvent:"Sí",
+velocity:"Pronto",
+solvedBy:"Mi empresa",
+credibility:"Se necesita expertos en el tema",
+similarTo: "Bioflash"
+},
   {
   id: "cod18",
   create:"Servicio por única vez",
@@ -191,84 +261,44 @@ const models = [
   similarTo: "Mitienda"
   },
   {
-  id: "cod19",
-  create:"Servicio por única vez",
-  forWho:"Empresas grandes",
-  previousEvent:"Sí",
-  velocity:"Pronto",
-  solvedBy:"Terceros (conexión)",
-  credibility:"Se necesita confianza",
-  similarTo: "LinkMiners"
+    id: "cod24",
+    create:"Servicio constante",
+    forWho:"Empesas pequeñas o medianas",
+    previousEvent:"No",
+    velocity:"Tiempo real",
+    solvedBy:"Mi empresa",
+    credibility:"No necesita",
+    similarTo: "Tukuy"  
   }, 
   {
-  id: "cod20",
-  create:"Servicio constante",
-  forWho:"Personas",
-  previousEvent:"Sí",
-  velocity:"Tiempo real",
-  solvedBy:"Mi empresa",
-  credibility:"Se necesita expertos en el tema",
-  similarTo: "Hospitapp"
+    id: "cod25",
+    create:"Servicio constante",
+    forWho:"Empesas pequeñas o medianas",
+    previousEvent:"No",
+    velocity:"Tiempo real",
+    solvedBy:"Mi empresa",
+    credibility:"Se necesita expertos en el tema",
+    similarTo: "Qualus"  
   }, 
   {
-  id: "cod21",
-  create:"Servicio constante",
-  forWho:"Personas",
-  previousEvent:"Sí",
-  velocity:"Pronto",
-  solvedBy:"Terceros (conexión)",
-  credibility:"Se necesita expertos en el tema",
-  similarTo: "Likemytravel"
+    id: "cod26",
+    create:"Servicio constante",
+    forWho:"Empesas pequeñas o medianas + sus clientes",
+    previousEvent:"Sí",
+    velocity:"Tiempo real",
+    solvedBy:"Mi empresa",
+    credibility:"No necesita",
+    similarTo: "Tannder"  
   }, 
   {
-  id: "cod22",
-  create:"Servicio constante",
-  forWho:"Personas",
-  previousEvent:"No",
-  velocity:"Tiempo real",
-  solvedBy:"Mi empresa",
-  credibility:"No necesita",
-  similarTo: "Bombo"
-  }, 
-  {
-  id: "cod23",
-  create:"Servicio constante",
-  forWho:"Personas",
-  previousEvent:"No",
-  velocity:"Inmediato",
-  solvedBy:"Terceros (conexión)",
-  credibility:"No necesita",
-  similarTo: "Monkeyfit"  
-  }, 
-  {
-  id: "cod24",
-  create:"Servicio constante",
-  forWho:"Empesas pequeñas o medianas",
-  previousEvent:"No",
-  velocity:"Tiempo real",
-  solvedBy:"Mi empresa",
-  credibility:"No necesita",
-  similarTo: "Tukuy"  
-  }, 
-  {
-  id: "cod25",
-  create:"Servicio constante",
-  forWho:"Empesas pequeñas o medianas",
-  previousEvent:"No",
-  velocity:"Tiempo real",
-  solvedBy:"Mi empresa",
-  credibility:"Se necesita expertos en el tema",
-  similarTo: "Qualus"  
-  }, 
-  {
-  id: "cod26",
-  create:"Servicio constante",
-  forWho:"Empesas pequeñas o medianas + sus clientes",
-  previousEvent:"Sí",
-  velocity:"Tiempo real",
-  solvedBy:"Mi empresa",
-  credibility:"No necesita",
-  similarTo: "Tannder"  
+    id: "cod19",
+    create:"Servicio por única vez",
+    forWho:"Empresas grandes",
+    previousEvent:"Sí",
+    velocity:"Pronto",
+    solvedBy:"Terceros (conexión)",
+    credibility:"Se necesita confianza",
+    similarTo: "LinkMiners"
   }, 
   {
   id: "cod27",
@@ -319,37 +349,7 @@ const models = [
   solvedBy:"Mi empresa",
   credibility:"No necesita",
   similarTo: "AYO Mentoring"  
-  }, 
-  {
-  id: "cod32",
-  create:"Aprendizaje",
-  forWho:"Personas",
-  previousEvent:"Sí",
-  velocity:"Tiempo real",
-  solvedBy:"Terceros (conexión)",
-  credibility:"No necesita",
-  similarTo: "Arcux"  
-  }, 
-  {
-  id: "cod33",
-  create:"Empleo",
-  forWho:"Personas",
-  previousEvent:"Sí",
-  velocity:"Eventualmente",
-  solvedBy:"Terceros (conexión)",
-  credibility:"Se necesita expertos en el tema",
-  similarTo: "Talently"  
-  }, 
-  {
-  id: "cod34",
-  create:"Empleo",
-  forWho:"Personas",
-  previousEvent:"No",
-  velocity:"Eventualmente",
-  solvedBy:"Terceros (conexión)",
-  credibility:"No necesita",
-  similarTo: "WomanOnWork"  
-  }                
+  }
 ]
 
 
