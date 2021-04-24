@@ -2,7 +2,6 @@ let u_name = sessionStorage.getItem("name");
 let retrieved_answers = sessionStorage.getItem("answers");
 let answers2 = JSON.parse(retrieved_answers);
 
-
 //falta integrar answers2 con la combinacion de posibles resultados disponibles para despues mostrarlos los ejemplos de esa combinacion 
 
 
@@ -12,17 +11,18 @@ document.querySelector(".u_name").innerHTML = u_name;
 //aqui agregamos las respuestas que posteriormente seran comparadas
 
 let cod0 = [
-"Producto físico",
 "Personas",
+"Producto físico",
 "Sí",
 "Pronto",
 "Mi empresa",
 "No necesita",
-"Arquipets"]
+"Arquipets"
+]
 
 let cod1 = [
-"Producto físico",
 "Personas",
+"Producto físico",
 "Sí",
 "Pronto",
 "Terceros (conexión)",
@@ -30,8 +30,8 @@ let cod1 = [
 "Desmadres"]
 
 let cod2 = [
-"Producto físico",
 "Personas",
+"Producto físico",
 "No",
 "Pronto",
 "Mi empresa",
@@ -39,8 +39,8 @@ let cod2 = [
 "Ekolo"]
 
 let cod3 = [
-"Producto físico",
 "Personas",
+"Producto físico",
 "No",
 "Pronto",
 "Mi empresa",
@@ -48,8 +48,8 @@ let cod3 = [
 "Mamalama"]
 
 let cod4 = [
-"Producto físico",
 "Personas",
+"Producto físico",
 "No",
 "Pronto",
 "Terceros (conexión)",
@@ -57,16 +57,16 @@ let cod4 = [
 "Conectagro"]
 
 let cod5 = [
-"Producto físico",
 "Empresas pequeñas o medianas",
+"Producto físico",
 "Sí",
 "Pronto",
 "Mi empresa",
 "Se necesita expertos en el tema","Bioflash"]   
 
 let cod6 = [
-"Producto + servicio",
 "Personas",
+"Producto + servicio",
 "No",
 "Pronto",
 "Mi empresa + terceros",
@@ -74,8 +74,8 @@ let cod6 = [
 "Outfie"]
 
 let cod7 = [
-"Producto físico",
 "Personas y Ayuda Social",
+"Producto físico",
 "No",
 "Pronto",
 "Mi empresa",
@@ -83,8 +83,8 @@ let cod7 = [
 "Antarki"]
 
 let cod8 = [
-"Producto + servicio",
 "Personas",
+"Producto + servicio",
 "Sí",
 "Pronto",
 "Terceros (conexión)",
@@ -92,8 +92,8 @@ let cod8 = [
 "Somos Moto"]
 
 let cod9 = [
-"Servicio por única vez",
 "Personas",
+"Servicio por única vez",
 "Sí",
 "Inmediato",
 "Terceros (conexión)",
@@ -101,8 +101,8 @@ let cod9 = [
 "Yegoh"]
 
 let cod10 = [
-"Servicio por única vez",
 "Personas",
+"Servicio por única vez",
 "No",
 "Inmediato",
 "Terceros (conexión)",
@@ -110,8 +110,8 @@ let cod10 = [
 "WePayU"]
 
 let cod11 = [
-"Servicio por única vez",
 "Personas",
+"Servicio por única vez",
 "No",
 "Inmediato",
 "Terceros (conexión)",
@@ -119,8 +119,8 @@ let cod11 = [
 "Fastfix"]
 
 let cod12 = [
-"Servicio por única vez",
 "Personas",
+"Servicio por única vez",
 "Sí",
 "Pronto",
 "Mi empresa",
@@ -129,21 +129,53 @@ let cod12 = [
 ]
 
 let cod13 = [
-"Servicio por única vez","Personas","Sí","Pronto","Mi empresa","Se necesita expertos en el tema","Legaly"]
+"Personas",
+"Servicio por única vez",
+"Sí",
+"Pronto",
+"Mi empresa",
+"Se necesita expertos en el tema",
+"Legaly"]
 
 let cod14 = [
-"Servicio por única vez","Personas","No","Pronto","Terceros (conexión)","Se necesita confianza","Rebajatuscuentas"]
+"Personas",
+"Servicio por única vez",
+"No",
+"Pronto",
+"Terceros (conexión)",
+"Se necesita confianza",
+"Rebajatuscuentas"]
 
 let cod15 = [
-"Servicio por única vez","Personas","Sí","Eventualmente","Terceros (conexión)","No necesita","Queestudiar"]
+"Personas",
+"Servicio por única vez",
+"Sí",
+"Eventualmente",
+"Terceros (conexión)",
+"No necesita",
+"Queestudiar"]
 
-let cod16 = ["Servicio constante","Personas","Sí","Tiempo real","Mi empresa","Se necesita expertos en el tema","Hospitapp"]
+let cod16 = [
+"Personas",
+"Servicio constante",
+"Sí",
+"Tiempo real",
+"Mi empresa",
+"Se necesita expertos en el tema",
+"Hospitapp"]
 
-let cod17 = ["Servicio constante","Personas","No","Tiempo real","Mi empresa","No necesita","Bombo"]
+let cod17 = [
+"Personas",
+"Servicio constante",
+"No",
+"Tiempo real",
+"Mi empresa",
+"No necesita",
+"Bombo"]
 
 let cod18 = [
-"Servicio constante",
 "Personas",
+"Servicio constante",
 "No",
 "Inmediato",
 "Terceros (conexión)",
@@ -151,8 +183,8 @@ let cod18 = [
 "Monkeyfit"]
 
 let cod19 = [
-"Servicio constante",
 "Personas",
+"Servicio constante",
 "Sí",
 "Pronto",
 "Terceros (conexión)",
@@ -160,8 +192,8 @@ let cod19 = [
 "Likemytravel"]
 
 let cod20 = [
-"Aprendizaje",
 "Personas",
+"Aprendizaje",
 "Sí",
 "Tiempo real",
 "Terceros (conexión)",
@@ -169,8 +201,8 @@ let cod20 = [
 "Arcux"]
 
 let cod21 = [
-"Empleo",
 "Personas",
+"Empleo",
 "Sí",
 "Eventualmente",
 "Terceros (conexión)",
@@ -178,8 +210,8 @@ let cod21 = [
 "Talently"]
 
 let cod22 = [
-"Empleo",
 "Personas",
+"Empleo",
 "No",
 "Eventualmente",
 "Terceros (conexión)",
@@ -187,8 +219,8 @@ let cod22 = [
 "WomanOnWork"]
 
 let cod23 = [
-"Servicio por única vez",
 "Empresas pequeñas o medianas",
+"Servicio por única vez",
 "No",
 "Pronto",
 "Mi empresa",
@@ -196,8 +228,8 @@ let cod23 = [
 "Mitienda"]
 
 let cod24 =[
-"Servicio constante",
 "Empesas pequeñas o medianas",
+"Servicio constante",
 "No",
 "Tiempo real",
 "Mi empresa",
@@ -205,8 +237,8 @@ let cod24 =[
 "Tukuy"]
 
 let cod25 =[
-"Servicio constante",
 "Empesas pequeñas o medianas",
+"Servicio constante",
 "No",
 "Tiempo real",
 "Mi empresa",
@@ -214,8 +246,8 @@ let cod25 =[
 "Qualus"]
 
 let cod26 = [
-"Servicio constante",
 "Empesas pequeñas o medianas + sus clientes",
+"Servicio constante",
 "Sí",
 "Tiempo real",
 "Mi empresa",
@@ -224,8 +256,8 @@ let cod26 = [
 ]
 
 let cod27 = [
-"Servicio por única vez",
 "Empresas grandes",
+"Servicio por única vez",
 "Sí",
 "Pronto",
 "Terceros (conexión)",
@@ -234,8 +266,8 @@ let cod27 = [
 ]
 
 let cod28 = [
-"Servicio constante",
 "Empesas grandes",
+"Servicio constante",
 "Sí",
 "Tiempo real",
 "Mi empresa",
@@ -244,8 +276,8 @@ let cod28 = [
 ]
 
 let cod29 = [
-"Servicio constante",
 "Empesas grandes",
+"Servicio constante",
 "No",
 "Tiempo real",
 "Mi empresa",
@@ -254,8 +286,8 @@ let cod29 = [
 ]
 
 let cod30 = [
-"Servicio constante",
 "Empesas grandes + sus clientes",
+"Servicio constante",
 "Sí",
 "Tiempo real",
 "Mi empresa",
@@ -264,8 +296,8 @@ let cod30 = [
 ]
 
 let cod31 = [
-"Servicio constante",
 "Empesas grandes + sus clientes",
+"Servicio constante",
 "Sí",
 "Tiempo real",
 "Mi empresa + terceros",
@@ -274,8 +306,8 @@ let cod31 = [
 ]
 
 let cod32 = [
-"Servicio constante",
 "Empesas grandes + trabajadores",
+"Servicio constante",
 "No",
 "Tiempo real",
 "Mi empresa",
@@ -288,7 +320,8 @@ let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10,cod11,cod12,c
 //let nuevo = antiguo.push("Holi")
 
 function match_answer(){
-    for (let z = 0; z<cod.length; z++){
+  for (let z = 0; z<cod.length; z++){
+    debugger
          let w = cod[z].pop();
          let x = JSON.stringify(cod[z])
          if(x == retrieved_answers) {
