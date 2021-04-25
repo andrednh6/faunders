@@ -321,7 +321,7 @@ let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10,cod11,cod12,c
 
 function match_answer(){
   for (let z = 0; z<cod.length; z++){
-    debugger
+
          let w = cod[z].pop();
          let x = JSON.stringify(cod[z])
          if(x == retrieved_answers) {
