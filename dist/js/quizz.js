@@ -233,7 +233,7 @@ const models = [
 {
 id: "cod07",
 create:"Producto físico",
-forWho:"Personas y Ayuda Social",
+forWho:"Personas + ayuda social",
 previousEvent:"No",
 velocity:"Pronto",
 solvedBy:"Mi empresa",
@@ -243,7 +243,7 @@ similarTo: "Antarki"
 {
 id: "cod08",
 create:"Producto físico",
-forWho:"Empresas pequeñas o medianas",
+forWho:"Empresas peq o med",
 previousEvent:"Sí",
 velocity:"Pronto",
 solvedBy:"Mi empresa",
@@ -253,7 +253,7 @@ similarTo: "Bioflash"
   {
   id: "cod18",
   create:"Servicio por única vez",
-  forWho:"Empresas pequeñas o medianas",
+  forWho:"Empresas peq o med",
   previousEvent:"No",
   velocity:"Pronto",
   solvedBy:"Mi empresa",
@@ -283,7 +283,7 @@ similarTo: "Bioflash"
   {
     id: "cod26",
     create:"Servicio constante",
-    forWho:"Empesas pequeñas o medianas + sus clientes",
+    forWho:"Empesas peq o med + sus clientes",
     previousEvent:"Sí",
     velocity:"Tiempo real",
     solvedBy:"Mi empresa",
@@ -367,39 +367,39 @@ let filds = ["id","create","forWho","previousEvent","velocity","solvedBy","credi
 
 //En caso 
 //Casos de Producto
-let createProd = models.filter(x => x.create == "Producto físico")
-let onlyProd = createProd.map(x => x.create)
-let forWhoProd = createProd.map(x => x.forWho)
-let previousProd = createProd.map(x => x.previousEvent)
-let velocityProd = createProd.map(x => x.velocity)
-let solvedByProd = createProd.map(x => x.solvedBy)
-let credibilityProd = createProd.map(x => x.credibility)
+//let createProd = models.filter(x => x.create == "Producto físico")
+//let onlyProd = createProd.map(x => x.create)
+//let forWhoProd = createProd.map(x => x.forWho)
+//let previousProd = createProd.map(x => x.previousEvent)
+//let velocityProd = createProd.map(x => x.velocity)
+//let solvedByProd = createProd.map(x => x.solvedBy)
+//let credibilityProd = createProd.map(x => x.credibility)
 //Respuestas unicas forWho
 
-const uniqueOnlyProd = [...new Set(onlyProd)]
-const uniqueWhoProd = [...new Set(forWhoProd)]
-const uniquePreviousProd = [...new Set(previousProd)]
-const uniqueVelocityProd = [...new Set(velocityProd)]
-const uniqueSolvedProd = [...new Set(solvedByProd)]
-const uniqueCredibilityProd = [...new Set(credibilityProd)]
+//const uniqueOnlyProd = [...new Set(onlyProd)]
+//const uniqueWhoProd = [...new Set(forWhoProd)]
+//const uniquePreviousProd = [...new Set(previousProd)]
+//const uniqueVelocityProd = [...new Set(velocityProd)]
+//const uniqueSolvedProd = [...new Set(solvedByProd)]
+//const uniqueCredibilityProd = [...new Set(credibilityProd)]
 
 //Nro de opciones de producto
-console.log(createProd.length);
+//console.log(createProd.length);
 
-let prodForPeople = createProd.filter(x => x.forWho == "Personas")
+//let prodForPeople = createProd.filter(x => x.forWho == "Personas")
 //Nro de opciones de producto & personas
-console.log(prodForPeople.length)
+//console.log(prodForPeople.length)
 
-let prodForSbMb = createProd.filter(x => x.forWho == "Empresas pequeñas o medianas")
+//let prodForSbMb = createProd.filter(x => x.forWho == "Empresas peq o med")
 //Nro de opciones de producto & peq emp o med emp
-console.log(prodForSbMb.length);
+//console.log(prodForSbMb.length);
 
 let questions = [
     {
       id:1,
       question:"¿Quién se beneficia principalmente?",
       options: [ //"Producto físico", "Producto + servicio", "Servicio por única vez", "Servicio constante", "Aprendizaje", "Empleo"
-       "Personas", "Personas y Ayuda Social", "Empresas pequeñas o medianas", "Empesas pequeñas o medianas + sus clientes", "Empresas grandes", "Empesas grandes + sus clientes", "Empesas grandes + trabajadores"
+       "Personas", "Personas + ayuda social", "Empresas peq o med", "Empesas peq o med + sus clientes", "Empresas grandes", "Empesas grandes + sus clientes", "Empesas grandes + trabajadores"
       ]
     },
     {
@@ -428,10 +428,6 @@ let questions = [
       options: []
     }
 ];
-
-
-
- 
 
 
 

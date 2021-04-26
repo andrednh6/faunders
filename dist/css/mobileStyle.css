@@ -1,10 +1,13 @@
 body{
-   min-width: 360px;   
-   height:560px;
+    min-width: 360px;   
 }
 
+.quiz_body {
+    height:100%;
+    padding-top:380px;
+}
 .logo_container{
-display: flex;
+    display: flex;
 justify-content: center;
 padding-top: 100px;
 margin-bottom: 28px;
@@ -37,7 +40,5 @@ margin-bottom: 28px;
     
 }
 .wrapper{
-
-     height:120px;
     background-color: #fff;
 }

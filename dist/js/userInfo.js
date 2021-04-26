@@ -57,7 +57,7 @@ let cod4 = [
 "Conectagro"]
 
 let cod5 = [
-"Empresas pequeñas o medianas",
+"Empresas peq o med",
 "Producto físico",
 "Sí",
 "Pronto",
@@ -74,7 +74,7 @@ let cod6 = [
 "Outfie"]
 
 let cod7 = [
-"Personas y Ayuda Social",
+"Personas + ayuda social",
 "Producto físico",
 "No",
 "Pronto",
@@ -219,7 +219,7 @@ let cod22 = [
 "WomanOnWork"]
 
 let cod23 = [
-"Empresas pequeñas o medianas",
+"Empresas peq o med",
 "Servicio por única vez",
 "No",
 "Pronto",
@@ -228,7 +228,7 @@ let cod23 = [
 "Mitienda"]
 
 let cod24 =[
-"Empesas pequeñas o medianas",
+"Empresas peq o med",
 "Servicio constante",
 "No",
 "Tiempo real",
@@ -237,7 +237,7 @@ let cod24 =[
 "Tukuy"]
 
 let cod25 =[
-"Empesas pequeñas o medianas",
+"Empresas peq o med",
 "Servicio constante",
 "No",
 "Tiempo real",
@@ -246,7 +246,7 @@ let cod25 =[
 "Qualus"]
 
 let cod26 = [
-"Empesas pequeñas o medianas + sus clientes",
+"Empesas peq o med + sus clientes",
 "Servicio constante",
 "Sí",
 "Tiempo real",
