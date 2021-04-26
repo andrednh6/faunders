@@ -1,0 +1,43 @@
+body{
+   min-width: 360px;   
+   height:560px;
+}
+
+.logo_container{
+display: flex;
+justify-content: center;
+padding-top: 200px;
+margin-bottom: 28px;
+}
+.logo_container img{
+    width: 175px;
+    height:70px;
+}
+
+.introduction{
+    width:270px;
+    height:124px;
+    margin: auto;
+    text-align: center;
+}
+.introduction h1{
+    font-size:16px;
+    align-items: center;
+    color: #8A57AF;
+    margin-bottom: 24px;
+
+}
+
+.introduction p{
+    margin: auto;
+    width:235px;
+    font-size:12px;
+    font-weight: 400px;
+    align-items: center;
+    
+}
+.wrapper{
+
+     height:120px;
+    background-color: #fff;
+}
