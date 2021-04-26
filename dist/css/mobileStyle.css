@@ -6,7 +6,7 @@ body{
 .logo_container{
 display: flex;
 justify-content: center;
-padding-top: 200px;
+padding-top: 100px;
 margin-bottom: 28px;
 }
 .logo_container img{
