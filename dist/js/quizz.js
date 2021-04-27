@@ -2,13 +2,6 @@ window.onload = function() {
   show(0);
 }
 
-//cortar el objeto models desde create a similarto
-//antes de comparar quitarle la ultima linea
-//pasarlo a object.values()
-//a ese valor convertirlo a stringify de JSON
-
-
-
 const models = [
   {
   id: "cod01",
@@ -352,47 +345,7 @@ similarTo: "Bioflash"
   }
 ]
 
-
-
-//filtro los producto
-//reduzco la matriz de resultados del filtro a una con solo las respuestas correctas en forWho, previousEvent, velocity, solvedBy, credibility, similarTo
-
-
-//To do agregar los filtros que se van a usar en el futuro
-
-
-
 let filds = ["id","create","forWho","previousEvent","velocity","solvedBy","credibility","similarTo"]
-
-
-//En caso 
-//Casos de Producto
-//let createProd = models.filter(x => x.create == "Producto físico")
-//let onlyProd = createProd.map(x => x.create)
-//let forWhoProd = createProd.map(x => x.forWho)
-//let previousProd = createProd.map(x => x.previousEvent)
-//let velocityProd = createProd.map(x => x.velocity)
-//let solvedByProd = createProd.map(x => x.solvedBy)
-//let credibilityProd = createProd.map(x => x.credibility)
-//Respuestas unicas forWho
-
-//const uniqueOnlyProd = [...new Set(onlyProd)]
-//const uniqueWhoProd = [...new Set(forWhoProd)]
-//const uniquePreviousProd = [...new Set(previousProd)]
-//const uniqueVelocityProd = [...new Set(velocityProd)]
-//const uniqueSolvedProd = [...new Set(solvedByProd)]
-//const uniqueCredibilityProd = [...new Set(credibilityProd)]
-
-//Nro de opciones de producto
-//console.log(createProd.length);
-
-//let prodForPeople = createProd.filter(x => x.forWho == "Personas")
-//Nro de opciones de producto & personas
-//console.log(prodForPeople.length)
-
-//let prodForSbMb = createProd.filter(x => x.forWho == "Empresas peq o med")
-//Nro de opciones de producto & peq emp o med emp
-//console.log(prodForSbMb.length);
 
 let questions = [
     {
@@ -404,7 +357,7 @@ let questions = [
     },
     {
       id:2,
-      question:"¿Qué quieres ofrecer?",
+      question:"¿Qué es lo que esta ",
       options: []
     },
     {
@@ -482,30 +435,62 @@ function next(){
     
     question_count++;
     show(question_count);
-  //  let secondFilterOption = firstFilterOption.filter(x => x.forWho === secondOption);
-  //let filds = ["id","create","forWho","previousEvent","velocity","solvedBy","credibility","similarTo"]
-  }
-  //if (question_count == 1) {
-    //  onlyAvailableOptions();
-    //}
-    //check answer by the user
-
-    //give only availableOptions for next questions
+ 
   }
 
-//question_count = Nro de pregunta
-//options_counter = Nro de opciones de la pregunta
-
+  }
 
   function show(count){
-
     let question = document.getElementById("questions");
-    let options_counter = questions[question_count]["options"].length;
-    if (count >= 1){
-
-      let options_counter = questions[question_count]["options"][0].length;
-      question.innerHTML = `
-      <h2>${questions[count].question}</h2>`;
+    let options_counter = questions[question_count]["options"][0].length;
+    if (count >= 1 && ( answers2 == "Personas + ayuda social" || answers2 == "Personas")){
+      switch (count){
+        case 1:
+          adaptQuestion(1,"persona busca finalmente");
+          break;
+        case 2:
+          adaptQuestion(2,"");
+          break;
+        case 3:
+          adaptQuestion(3,"");
+          break;
+        case 4:
+          adaptQuestion(4,"");
+          break;
+        case 5:
+          adaptQuestion(5,"");
+          break;
+        default:
+          console.log("error");
+      }
+     for (let j = 0; j < options_counter; j++) {
+        question.innerHTML += ` 
+         <ul class="option_group">
+         <li class="option">${questions[count].options[0][j]}</li>
+         </ul>
+         `;
+         }
+         toggleActive();
+    } else if (count >= 1 && ( answers2 == "Empresas peq o med" || answers2 == "Empresas peq o med + sus clientes" || answers2 == "Empresas grandes" || answers2 =="Empresas grandes + sus clientes" || answers2 == "Empresas grandes + trabajadores")){
+      switch (count){
+        case 1:
+          adaptQuestion(1,"empresa busca finalmente");
+          break;
+        case 2:
+          adaptQuestion(2,"");
+          break;
+        case 3:
+          adaptQuestion(3,"");
+          break;
+        case 4:
+          adaptQuestion(4,"");
+          break;
+        case 5:
+          adaptQuestion(5,"");
+          break;
+        default:
+          console.log("error");
+      }
       for (let j = 0; j < options_counter; j++) {
         question.innerHTML += ` 
          <ul class="option_group">
@@ -514,12 +499,13 @@ function next(){
          `;
          }
          toggleActive();
-    } else {
-   
+    } 
+    
+    else {
+      let options_counter = questions[question_count]["options"].length;
       question.innerHTML = `
       <h2>${questions[count].question}</h2>`;
       for (let j = 0; j < options_counter; j++) {
-      // question.innerHTML = "<h2>" + questions[count].question + "</h2>";
       question.innerHTML += ` 
        <ul class="option_group">
        <li class="option">${questions[count].options[j]}</li>
@@ -543,11 +529,6 @@ function toggleActive(){
        }
     }
 }
-
-//function onlyAvailableOptions(){  
-  //let availableOptions = models.filter(x => x.forWho === firstFilterOption)
-//}
-
 
 solvingMatrix = function() {
   let one = sessionStorage.getItem("firstFilter");
@@ -576,4 +557,11 @@ function bringBack (keyName, number){
   z = sessionStorage.getItem(keyName);
   zBack = JSON.parse(z);
   questions[number]["options"].push(zBack)
+}
+
+function adaptQuestion (number, adaptableText){
+  let question = document.getElementById("questions");
+  let options_counter = questions[question_count]["options"][0].length;
+  question.innerHTML = `
+  <h2>${questions[number].question}${adaptableText}?</h2>`
 }
