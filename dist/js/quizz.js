@@ -446,7 +446,7 @@ function next(){
     if (count >= 1 && ( answers2 == "Personas + ayuda social" || answers2 == "Personas")){
       switch (count){
         case 1:
-          adaptQuestion(1,"persona busca finalmente");
+          adaptQuestion(1,"persona busca finalmente?");
           break;
         case 2:
           adaptQuestion(2,"");
@@ -474,7 +474,7 @@ function next(){
     } else if (count >= 1 && ( answers2 == "Empresas peq o med" || answers2 == "Empresas peq o med + sus clientes" || answers2 == "Empresas grandes" || answers2 =="Empresas grandes + sus clientes" || answers2 == "Empresas grandes + trabajadores")){
       switch (count){
         case 1:
-          adaptQuestion(1,"empresa busca finalmente");
+          adaptQuestion(1,"empresa busca finalmente?");
           break;
         case 2:
           adaptQuestion(2,"");
@@ -563,5 +563,16 @@ function adaptQuestion (number, adaptableText){
   let question = document.getElementById("questions");
   let options_counter = questions[question_count]["options"][0].length;
   question.innerHTML = `
-  <h2>${questions[number].question}${adaptableText}?</h2>`
+  <h2>${questions[number].question}${adaptableText}</h2>`
+}
+
+function checkFirstVisit() {
+  if(document.cookie.indexOf('mycookie')==-1) {
+    // cookie doesn't exist, create it now
+    document.cookie = 'mycookie=1';
+  }
+  else {
+    // not first visit, so alert
+    window.localStorage.clear();
+  }
 }
