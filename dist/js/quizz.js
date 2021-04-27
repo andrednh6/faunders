@@ -566,13 +566,3 @@ function adaptQuestion (number, adaptableText){
   <h2>${questions[number].question}${adaptableText}</h2>`
 }
 
-function checkFirstVisit() {
-  if(document.cookie.indexOf('mycookie')==-1) {
-    // cookie doesn't exist, create it now
-    document.cookie = 'mycookie=1';
-  }
-  else {
-    // not first visit, so alert
-    window.localStorage.clear();
-  }
-}

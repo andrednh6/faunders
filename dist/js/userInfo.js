@@ -17,7 +17,8 @@ let cod0 = [
 "Pronto",
 "Mi empresa",
 "No necesita",
-"Arquipets"
+"Arquipets",
+"https://www.arquipetsperu.com/"
 ]
 
 let cod1 = [
@@ -27,7 +28,9 @@ let cod1 = [
 "Pronto",
 "Terceros (conexión)",
 "No necesita",
-"Desmadres"]
+"Desmadres",
+"https://www.desmadres.shop/"
+]
 
 let cod2 = [
 "Personas",
@@ -36,7 +39,9 @@ let cod2 = [
 "Pronto",
 "Mi empresa",
 "No necesita",
-"Ekolo"]
+"Ekolo",
+"https://ekolo.pe/",
+]
 
 let cod3 = [
 "Personas",
@@ -45,7 +50,8 @@ let cod3 = [
 "Pronto",
 "Mi empresa",
 "Se necesita expertos en el tema",
-"Mamalama"]
+"Mamalama",
+"http://mamalamasnacks.com/"]
 
 let cod4 = [
 "Personas",
@@ -54,7 +60,8 @@ let cod4 = [
 "Pronto",
 "Terceros (conexión)",
 "No necesita",
-"Conectagro"]
+"Conectagro",
+"https://www.linkedin.com/company/conectagro/about/"]
 
 let cod5 = [
 "Empresas peq o med",
@@ -62,7 +69,10 @@ let cod5 = [
 "Sí",
 "Pronto",
 "Mi empresa",
-"Se necesita expertos en el tema","Bioflash"]   
+"Se necesita expertos en el tema",
+"Bioflash",
+"https://www.facebook.com/BioflashPeru/?ref=page_internal"
+]   
 
 let cod6 = [
 "Personas",
@@ -71,7 +81,9 @@ let cod6 = [
 "Pronto",
 "Mi empresa + terceros",
 "Se necesita expertos en el tema",
-"Outfie"]
+"Outfie",
+"https://www.myoutfie.com/"
+]
 
 let cod7 = [
 "Personas + ayuda social",
@@ -80,7 +92,8 @@ let cod7 = [
 "Pronto",
 "Mi empresa",
 "No necesita",
-"Antarki"]
+"Antarki",
+"https://www.instagram.com/antarki.eco/?hl=es-la"]
 
 let cod8 = [
 "Personas",
@@ -89,7 +102,8 @@ let cod8 = [
 "Pronto",
 "Terceros (conexión)",
 "No necesita",
-"Somos Moto"]
+"Somos Moto",
+"https://somosmoto.pe/"]
 
 let cod9 = [
 "Personas",
@@ -98,7 +112,8 @@ let cod9 = [
 "Inmediato",
 "Terceros (conexión)",
 "Se necesita confianza",
-"Yegoh"]
+"Yegoh",
+"https://yegoh.com/"]
 
 let cod10 = [
 "Personas",
@@ -107,7 +122,9 @@ let cod10 = [
 "Inmediato",
 "Terceros (conexión)",
 "Se necesita confianza",
-"WePayU"]
+"WePayU",
+"https://www.wepayu.pe/"
+]
 
 let cod11 = [
 "Personas",
@@ -116,7 +133,9 @@ let cod11 = [
 "Inmediato",
 "Terceros (conexión)",
 "Se necesita expertos en el tema",
-"Fastfix"]
+"Fastfix",
+"https://fastfix.pe/"
+]
 
 let cod12 = [
 "Personas",
@@ -125,7 +144,8 @@ let cod12 = [
 "Pronto",
 "Mi empresa",
 "Se necesita confianza",
-"Sin envolturas"
+"Sin envolturas",
+"https://sinenvolturas.pe/"
 ]
 
 let cod13 = [
@@ -135,7 +155,9 @@ let cod13 = [
 "Pronto",
 "Mi empresa",
 "Se necesita expertos en el tema",
-"Legaly"]
+"Legaly",
+"https://www.legaly.pe/"
+]
 
 let cod14 = [
 "Personas",
@@ -144,7 +166,8 @@ let cod14 = [
 "Pronto",
 "Terceros (conexión)",
 "Se necesita confianza",
-"Rebajatuscuentas"]
+"Rebajatuscuentas",
+"https://rebajatuscuentas.com/pe"]
 
 let cod15 = [
 "Personas",
@@ -153,7 +176,9 @@ let cod15 = [
 "Eventualmente",
 "Terceros (conexión)",
 "No necesita",
-"Queestudiar"]
+"Queestudiar",
+"https://queestudiar.la/"
+]
 
 let cod16 = [
 "Personas",
@@ -162,7 +187,9 @@ let cod16 = [
 "Tiempo real",
 "Mi empresa",
 "Se necesita expertos en el tema",
-"Hospitapp"]
+"Hospitapp",
+"https://www.hospitapp.pe/"
+]
 
 let cod17 = [
 "Personas",
@@ -171,7 +198,9 @@ let cod17 = [
 "Tiempo real",
 "Mi empresa",
 "No necesita",
-"Bombo"]
+"Bombo",
+"https://bombo.pe/"
+]
 
 let cod18 = [
 "Personas",
@@ -180,7 +209,9 @@ let cod18 = [
 "Inmediato",
 "Terceros (conexión)",
 "No necesita",
-"Monkeyfit"]
+"Monkeyfit",
+"https://www.monkeyfitpass.com/"
+]
 
 let cod19 = [
 "Personas",
@@ -189,7 +220,9 @@ let cod19 = [
 "Pronto",
 "Terceros (conexión)",
 "Se necesita expertos en el tema",
-"Likemytravel"]
+"Likemytravel",
+"https://www.likemytravel.com/"
+]
 
 let cod20 = [
 "Personas",
@@ -198,7 +231,9 @@ let cod20 = [
 "Tiempo real",
 "Terceros (conexión)",
 "No necesita",
-"Arcux"]
+"Arcux",
+"https://arcux.net/"
+]
 
 let cod21 = [
 "Personas",
@@ -207,7 +242,8 @@ let cod21 = [
 "Eventualmente",
 "Terceros (conexión)",
 "Se necesita expertos en el tema",
-"Talently"]
+"Talently",
+"https://talently.tech/"]
 
 let cod22 = [
 "Personas",
@@ -216,7 +252,9 @@ let cod22 = [
 "Eventualmente",
 "Terceros (conexión)",
 "No necesita",
-"WomanOnWork"]
+"WomanOnWork",
+"https://www.linkedin.com/company/woman-on-work/"
+]
 
 let cod23 = [
 "Empresas peq o med",
@@ -225,7 +263,9 @@ let cod23 = [
 "Pronto",
 "Mi empresa",
 "No necesita",
-"Mitienda"]
+"Mitienda",
+"https://mitienda.pe/"
+]
 
 let cod24 =[
 "Empresas peq o med",
@@ -234,7 +274,9 @@ let cod24 =[
 "Tiempo real",
 "Mi empresa",
 "No necesita",
-"Tukuy"]
+"Tukuy",
+"https://tukuy.club/"
+]
 
 let cod25 =[
 "Empresas peq o med",
@@ -243,7 +285,9 @@ let cod25 =[
 "Tiempo real",
 "Mi empresa",
 "Se necesita expertos en el tema",
-"Qualus"]
+"Qualus",
+"https://qualusmanager.com/"
+]
 
 let cod26 = [
 "Empesas peq o med + sus clientes",
@@ -252,7 +296,8 @@ let cod26 = [
 "Tiempo real",
 "Mi empresa",
 "No necesita",
-"Tannder"
+"Tannder",
+"https://www.tannder.com/"
 ]
 
 let cod27 = [
@@ -262,7 +307,8 @@ let cod27 = [
 "Pronto",
 "Terceros (conexión)",
 "Se necesita confianza",
-"LinkMiners"
+"LinkMiners",
+"https://www.linkminers.com/"
 ]
 
 let cod28 = [
@@ -272,7 +318,8 @@ let cod28 = [
 "Tiempo real",
 "Mi empresa",
 "Se necesita expertos en el tema",
-"Tukutin"
+"Tukutin",
+"https://www.tukutin.com/"
 ]
 
 let cod29 = [
@@ -282,7 +329,8 @@ let cod29 = [
 "Tiempo real",
 "Mi empresa",
 "No necesita",
-"Mandü"
+"Mandü",
+"https://www.mandu.pe/"
 ]
 
 let cod30 = [
@@ -292,7 +340,8 @@ let cod30 = [
 "Tiempo real",
 "Mi empresa",
 "No necesita",
-"Check"
+"Check",
+"https://check.education/"
 ]
 
 let cod31 = [
@@ -302,7 +351,8 @@ let cod31 = [
 "Tiempo real",
 "Mi empresa + terceros",
 "No necesita",
-"Wibo"
+"Wibo",
+"https://www.soywibo.com/"
 ]
 
 let cod32 = [
@@ -312,7 +362,8 @@ let cod32 = [
 "Tiempo real",
 "Mi empresa",
 "No necesita",
-"AYO Mentoring"   
+"AYO Mentoring",
+"http://ayomentoring.com/"   
 ]
 
 let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10,cod11,cod12,cod13,cod14,cod15,cod16,cod17,cod18,cod19,cod20,cod21,cod22,cod23,cod24,cod25,cod26,cod27,cod28,cod29,cod30,cod31,cod32]
@@ -321,12 +372,14 @@ let cod = [cod0,cod1,cod2,cod3,cod4,cod5,cod6,cod7,cod8,cod9,cod10,cod11,cod12,c
 
 function match_answer(){
   for (let z = 0; z<cod.length; z++){
-
-         let w = cod[z].pop();
-         let x = JSON.stringify(cod[z])
-         if(x == retrieved_answers) {
+        let link = cod[z].pop();
+        let descriptionOne = "";
+        let descriptionTwo = "";
+        let w = cod[z].pop();
+        let x = JSON.stringify(cod[z])
+        if(x == retrieved_answers) {
         console.log(w);
-        document.querySelector(".answers").innerHTML = w;
+        document.querySelector(".answers").innerHTML +="<a href='" + link + "'>"+w+"</a>" ;
          
            //let y = cod[z].push(w);
          // console.log(cod[z]);
