@@ -178,20 +178,23 @@ color: #fff;
 
 .miniwrapp {
   display: grid;
-  background-color:#7a7a7a;
+  background-color:#fff;
   margin-top: 400px;
   
 }
 
 .rocket_icon {
   font-size: 200px;
-  color: #fff;
+  color: #8a57af;
   text-align: center;
 }
 
 .user_name,
 .user_similar {
-  color: #fff;
   text-align: center;
   margin-top: 20px;
+}
+
+.miniwrapp p{
+  color: #000
 }
