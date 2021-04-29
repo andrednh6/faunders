@@ -480,7 +480,7 @@ function match_answer(){
         let w = cod[z].pop();
         let x = JSON.stringify(cod[z]);
         if(x == retrieved_answers) {
-        document.querySelector(".answers").innerHTML +="<a href='" + link + "'>"+w+"</a>" ;
+        document.querySelector(".answers").innerHTML +="<a href='" + link + "'>"+"<h3>"+w+"</h3></a>" ;
         document.querySelector(".startupDescription").innerHTML = description;
         document.querySelector(".startupSteps").innerHTML = steps;
         document.querySelector(".entrevistas").innerHTML +="<a href='" + linkInterview + "'>" + "Entrevista" +"</a>";
