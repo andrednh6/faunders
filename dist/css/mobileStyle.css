@@ -1,44 +1,55 @@
-body{
-    min-width: 360px;   
+body {
+  min-width: 360px;
+}
+
+.miniwrapp .content {
+  max-width: 340px;
 }
 
 .quiz_body {
-    height:100%;
-    padding-top:380px;
+  height: 100%;
+  padding-top: 380px;
 }
-.logo_container{
-    display: flex;
-justify-content: center;
-padding-top: 100px;
-margin-bottom: 28px;
+.logo_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  margin-bottom: 28px;
 }
-.logo_container img{
-    width: 175px;
-    height:70px;
-}
-
-.introduction{
-    width:270px;
-    height:124px;
-    margin: auto;
-    text-align: center;
-}
-.introduction h1{
-    font-size:16px;
-    align-items: center;
-    color: #8A57AF;
-    margin-bottom: 24px;
-
+.logo_container img {
+  width: 175px;
+  height: 70px;
 }
 
-.introduction p{
-    margin: auto;
-    width:235px;
-    font-size:12px;
-    font-weight: 400px;
-    align-items: center;
-    
+.introduction {
+  width: 270px;
+  height: 124px;
+  margin: auto;
+  text-align: center;
 }
-.wrapper{
-    background-color: #fff;
+.introduction h1 {
+  font-size: 16px;
+  align-items: center;
+  color: #8a57af;
+  margin-bottom: 24px;
+}
+
+.introduction p {
+  margin: auto;
+  width: 235px;
+  font-size: 12px;
+  font-weight: 400px;
+  align-items: center;
+}
+.wrapper {
+  background-color: #fff;
+}
+
+.icon_container {
+  display: grid;
+  margin-top: 400px;
+}
+
+.rocket_icon {
+  font-size: 140px;
 }
